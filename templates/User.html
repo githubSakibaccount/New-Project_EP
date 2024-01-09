@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Earthquack Prediction</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+            h2{
+                text-align: center;
+            }
+            form {
+                width: 300px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px 0px grey;
+            }
+            label {
+                color: #333333;
+            }
+            select, input {
+                display: block;
+                margin-bottom: 10px;
+                padding: 5px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                background-color: #514caf;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 4px;
+            }
+            input[type="submit"]:hover {
+                background-color: #136d01d8;
+            }
+        </style>
+
+    </head>
+    <link rel="stylesheet" href="NEW FOLDER/User input.css">
+    <style>
+        body{
+    margin: 0px;
+    padding: 0px;
+    background: url(img/img13.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+    </style>
+    <body>
+        <h2 style="color:white">Earthquack Prediction</h2>
+        <form action='/predict' method="POST">  
+        
+        
+        <label>Note: After click the submit button show the alert of Earthquack</label>
+        <p>Enter a Magnitude:</p>
+        <input type="number" id="magnitude" name="magnitude" min="0">
+        <p>Enter a Date Time:</p>
+        <input type="number" id="date_time" name="date_time" min="0">
+        <label for="weight">Enter a Cid:</label>
+        <input type="number" id="cid" name="cid" min="0">
+        <label for="knownAllergies">Enter a Mim:</label>
+        <input type="text" id="mim" name="mim">
+        <label for="knownAllergies">Enter a Alert:</label>
+        <input type="text" id="alert" name="alert">
+        <label for="knownAllergies">Enter a Tsunami:</label>
+        <input type="text" id="tsunami" name="tsunami">
+        <label for="knownAllergies">Enter a Sig:</label>
+        <input type="text" id="sig" name="sig">
+        <label for="knownAllergies">Enter a Net:</label>
+        <input type="text" id="net" name="net">
+        <label for="knownAllergies">Enter a Nst:</label>
+        <input type="text" id="nst" name="nst">
+        <label for="knownAllergies">Enter a Dmin:</label>
+        <input type="text" id="dmin" name="dmin">
+        <label for="knownAllergies">Enter a Gap:</label>
+        <input type="text" id="gap" name="gap">
+        <label for="knownAllergies">Enter a Magnitude Type:</label>
+        <input type="text" id="magType" name="magType">
+        <label for="knownAllergies">Enter a Depth:</label>
+        <input type="text" id="depth" name="depth">
+        <label for="knownAllergies">Enter a Latitude:</label>
+        <input type="text" id="latitude" name="latitude">
+        <label for="knownAllergies">Enter a Longitude:</label>
+        <input type="text" id="longitude" name="longitude">
+        <label for="knownAllergies">Enter a Location:</label>
+        <input type="text" id="location" name="location">
+        <label for="knownAllergies">Enter a Continent:</label>
+        <input type="text" id="continent" name="continent">
+        <label for="knownAllergies">Enter a Country:</label>
+        <input type="text" id="country" name="country">
+        <input type="submit" value="predict">
+    </form>
+</body>
+</html>

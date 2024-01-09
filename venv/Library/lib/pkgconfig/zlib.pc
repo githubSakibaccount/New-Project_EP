@@ -1,0 +1,13 @@
+prefix=C:/Ep_vscode/venv/Library
+exec_prefix=C:/Ep_vscode/venv/Library
+libdir=C:/Ep_vscode/venv/Library/lib
+sharedlibdir=C:/Ep_vscode/venv/Library/lib
+includedir=C:/Ep_vscode/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
